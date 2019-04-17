@@ -64,6 +64,16 @@ public protocol Router: class {
   func navigate(to route: Route, with transition: TransitionType, animated: Bool, completion: (() -> Void)?)
 
   /**
+   Navigate from your current screen to a new entire router. Can only push a router as a modal. Afterwards, other controllers can be pushed inside the presented Router.
+
+   - Parameters:
+   - Router: The destination router that you want to navigate to
+   - animated: Animate the transition or not.
+   - completion: Completion handler.
+   */
+  func navigate(to router: Router, animated: Bool, completion: (() -> Void)?)
+
+  /**
    Handles backwards navigation through the stack.
 
    - Parameters:
@@ -110,6 +120,16 @@ public extension Router {
         }
       }
     }
+  }
+
+  func navigate(to router: Router, animated: Bool, completion: (() -> Void)?) {
+    guard let viewController = router.rootViewController else {
+      assert(false, "Router does not have a root view controller")
+      return
+    }
+
+    currentViewController?.present(viewController, animated: animated, completion: completion)
+    currentViewController = viewController
   }
 
   public func popToRoot(animated: Bool = true) {

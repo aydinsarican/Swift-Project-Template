@@ -41,6 +41,7 @@
 		97E7D31E205AAE2E009BA321 /* UserDataAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E7D31D205AAE2E009BA321 /* UserDataAccess.swift */; };
 		97EBDECF205AD5C10085A836 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EBDECE205AD5C10085A836 /* DashboardViewModel.swift */; };
 		97EBDED4205ADE360085A836 /* BaseDataAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EBDED3205ADE360085A836 /* BaseDataAccess.swift */; };
+		C425B3F62267BABD000A4BFF /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C425B3F52267BABD000A4BFF /* Identifiable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +106,7 @@
 		9C0F561147B7782F09513410 /* Pods-SwiftBaseProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftBaseProjectUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftBaseProjectUITests/Pods-SwiftBaseProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A2AEC1BFCBECE7611C3C144A /* Pods_SwiftBaseProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftBaseProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9B94875E31222427017C279 /* Pods_SwiftBaseProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftBaseProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C425B3F52267BABD000A4BFF /* Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
 		CA6DDFA450FE8259397DA81A /* Pods-SwiftBaseProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftBaseProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftBaseProject/Pods-SwiftBaseProject.debug.xcconfig"; sourceTree = "<group>"; };
 		F4591A9718CDDFDBFC90B278 /* Pods-SwiftBaseProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftBaseProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftBaseProject/Pods-SwiftBaseProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -166,6 +168,7 @@
 				97139D0A20765A0D007B1C65 /* UIView+ConstraintsHelpers.swift */,
 				1A2BE54621CBF7B5007ECE1C /* NSLayoutConstraint+Helpers.swift */,
 				1A6FEAC121CD1317007DD84A /* GestureRecognizerHandler.swift */,
+				C425B3F52267BABD000A4BFF /* Identifiable.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -609,7 +612,7 @@
 			);
 			name = R.Swift;
 			outputPaths = (
-				"$SRCROOT/R.generated.swift",
+				$SRCROOT/R.generated.swift,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -674,6 +677,7 @@
 				97EBDED4205ADE360085A836 /* BaseDataAccess.swift in Sources */,
 				97E5397C20751D2800D95BDA /* DashBoardRoute.swift in Sources */,
 				97E7D31C205AABE9009BA321 /* UserService.swift in Sources */,
+				C425B3F62267BABD000A4BFF /* Identifiable.swift in Sources */,
 				97D8232D2056DC7B00800FB1 /* R.generated.swift in Sources */,
 				97B83C602056EA8D0096B10A /* BaseManager.swift in Sources */,
 				97E7D31A205AAA57009BA321 /* User.swift in Sources */,
